@@ -10,17 +10,6 @@ html {
     height: 100%;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-
 .topnav {
     font-size: 14px; 
 }
@@ -35,7 +24,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(images/Links/Galaxy.jpg) no-repeat center center;
+    background-image: url(../images/Galaxy.jpg);
     background-size: cover;
 }
 

@@ -18,7 +18,10 @@
     <link href="css/half-slider.css" rel="stylesheet">
 
     <!-- Custom font -->
-    <link href="css/Northern Lights.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+
+    <!-- flip to get to facts -->
+    <link href="css/flip-3D.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -129,15 +132,17 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-6 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="https://xablaxablau.files.wordpress.com/2015/06/aurora-borealis-32-cool-wallpapers-hd.jpg" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project One</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            <div class="col-md-6 portfolio-item flip-3D">
+                <div class="front" style="background-image: url('https://xablaxablau.files.wordpress.com/2015/06/aurora-borealis-32-cool-wallpapers-hd.jpg')">
+                </div>
+                <div class="back">
+                    <h3>
+                        Project One
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
+            
             <div class="col-md-6 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="https://www.visitscotland.com/cms-images/landscape-and-nature/rowardennan" alt="">

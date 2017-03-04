@@ -1,0 +1,39 @@
+
+
+.flip-3D > .front {
+    position: absolute;
+    width: calc(100% - 30px);
+    -webkit-transform: perspective(600px) rotateY(0deg); 
+    transform: perspective(600px) rotateY(0deg);
+    height:300px; 
+    backface-visibility: hidden;
+    transition: transform 1.5s linear 0s;
+    transition: -webkit-transform  1.5s linear 0s;
+  }
+
+.flip-3D > .back {
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    color: white;
+    height:300px; 
+    font-size: 20px;
+    font-family:'distant_galaxyregular';
+    -webkit-transform: perspective(600px) rotateY(180deg); 
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+  }
+
+    
+.flip-3D:hover >.front {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip-3D:hover >.back {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+

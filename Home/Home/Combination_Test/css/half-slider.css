@@ -6,6 +6,7 @@
 
 html,
 body {
+ /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     height: 100%;
 }
 
@@ -31,6 +32,10 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
 }
 
 footer {

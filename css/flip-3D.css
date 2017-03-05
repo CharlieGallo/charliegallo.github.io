@@ -1,7 +1,11 @@
 
+.flip-3D {
+    margin-top: 40px; 
+}
+
 
 .flip-3D > .front {
-    position: absolute;
+    
     width: calc(100% - 30px);
     -webkit-transform: perspective(600px) rotateY(0deg); 
     transform: perspective(600px) rotateY(0deg);
@@ -17,6 +21,7 @@
     text-align: center;
     color: white;
     height:300px; 
+    top: 0;
     font-size: 20px;
     font-family:'distant_galaxyregular';
     -webkit-transform: perspective(600px) rotateY(180deg); 

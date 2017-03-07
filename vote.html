@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VoteForPlanet</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/vote.css" rel="stylesheet">
+		    <!--starwars font css-->
+    	<link href="css/font.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+		<script>
+			$(document).ready(function(){
+				$( "form" ).submit(function( event ) {
+					event.preventDefault();
+					var venusChecked = $('#future_planet_venus').is(':checked')
+					var plutoChecked = $('#future_planet_pluto').is(':checked')
+					var saturnChecked = $('#future_planet_saturn').is(':checked')
+					
+					
+					if($('input[name=future_planet]:checked').length<=0)
+					{
+ 						alert("PLEASE SELECT AN OPTION")
+					}
+					else 
+					{
+						alert("THANK YOU FOR YOUR SUBMISISON! KEEP YOUR EYE ON THE FUTURE!!")
+					}
+					
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">Back to Explore!</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="mars.html">Mars</a>
+                    </li>
+                    <li>
+                        <a href="jupiter.html">Jupiter</a>
+                    </li>
+                    <li>
+                        <a href="NorthernLights.html">The Northern Lights</a>
+                    </li>
+                    <li>
+                        <a href="Links.html">Links</a>
+                    </li>
+                     <li>
+                        <a href="#" style="color:white">Vote</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+		<div id ="form">
+			<form action="submission.html" onsubmit="return is_checked()">
+				<h1>VOTE ON THE FUTURE</h1>
+					<p>Please select one planet you would like to see added to this awesome website.</p>
+					Venus<input type="radio" name="future_planet" value="Venus" id="future_planet_venus"/><br/>
+					Pluto<input type="radio" name="future_planet" value="Pluto" id="future_planet_pluto"/><br/>
+					Saturn<input type="radio" name="future_planet" value="Saturn" id="future_planet_saturn"/><br/>
+					<input type="submit" value="submit"/>
+			</form>
+		</div>
+
+	</body>
+</html>
+

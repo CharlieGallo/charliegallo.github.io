@@ -1,12 +1,23 @@
 
 .flip-3D {
     margin-top: 40px; 
+    
+}
+
+@media (max-width: 635px) {
+    .back p {
+        font-size:13px;
+    }
+}
+
+@media (min-width: 636px) {
+    .back p {
+        font-size:17px;
+    }
 }
 
 
 .flip-3D > .front {
-    
-    width: calc(100% - 30px);
     -webkit-transform: perspective(600px) rotateY(0deg); 
     transform: perspective(600px) rotateY(0deg);
     height:300px; 
@@ -19,6 +30,7 @@
     background-color: black;
     position: absolute;
     text-align: center;
+    padding: 0 15px;
     color: white;
     height:300px; 
     top: 0;

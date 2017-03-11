@@ -1,0 +1,29 @@
+body {
+	background-image:url('../images/deathstar.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width:100%;
+	height:100%;
+	margin: 0;
+	top-padding:30%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#form {
+	padding-top: 25%;
+	position: 50%;
+	color: white;
+}
+
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+
+input[type="submit"] {
+  margin-top: 10px;
+  color: black;
+}
